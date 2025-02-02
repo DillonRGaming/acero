@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discord Clone - Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Channel Sidebar -->
+    <div class="sidebar-channels">
+      <div class="server-header">My Server</div>
+      <ul class="channel-list">
+        <li class="channel-item active" data-channel="general"># general</li>
+      </ul>
+    </div>
+    <!-- Chat Area -->
+    <div class="chat-area">
+      <div class="chat-header">
+        <h2># general</h2>
+        <button id="settingsBtn">Settings</button>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type a message..." id="messageInput">
+      </div>
+    </div>
+    <!-- Members Sidebar -->
+    <div class="sidebar-members">
+      <div class="members-header">Members</div>
+      <ul class="member-list">
+        <li class="member-item">User1</li>
+        <li class="member-item">User2</li>
+        <li class="member-item">User3</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Settings</h2>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+    {
+        "type": "chat",
+        "channel": "general",
+        "username": "Dillon",
+        "timestamp": "01:23",
+        "text": "test"
+    },
+    {
+        "type": "chat",
+        "channel": "general",
+        "username": "Dillon",
+        "timestamp": "01:23",
+        "text": "test"
+    }
+]

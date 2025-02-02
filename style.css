@@ -1,0 +1,210 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #36393f;
+    color: #dcddde;
+  }
+  
+  /* --- Login Page Styles --- */
+  .login-container {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #2f3136;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .login-container h1 {
+    margin-bottom: 20px;
+  }
+  .login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #202225;
+    color: #dcddde;
+  }
+  .login-container button {
+    padding: 10px 20px;
+    background-color: #7289da;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .login-container .error {
+    color: #ff5555;
+    margin-top: 10px;
+  }
+  
+  /* --- Chat App Styles --- */
+  #app {
+    display: flex;
+    height: 100vh;
+  }
+  .sidebar-channels {
+    width: 240px;
+    background-color: #2f3136;
+    display: flex;
+    flex-direction: column;
+  }
+  .server-header {
+    padding: 15px;
+    border-bottom: 1px solid #202225;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .channel-list {
+    list-style: none;
+    padding: 10px 0;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  .channel-item {
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .channel-item:hover {
+    background-color: #40444b;
+  }
+  .channel-item.active {
+    background-color: #36393f;
+  }
+  .chat-area {
+    flex-grow: 1;
+    background-color: #36393f;
+    display: flex;
+    flex-direction: column;
+  }
+  .chat-header {
+    padding: 15px;
+    background-color: #2f3136;
+    border-bottom: 1px solid #202225;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .chat-header button {
+    background-color: #7289da;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .chat-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  .chat-input {
+    padding: 10px 15px;
+    background-color: #40444b;
+    border-top: 1px solid #202225;
+  }
+  .chat-input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #202225;
+    color: #dcddde;
+  }
+  .chat-input input:focus {
+    outline: none;
+  }
+  .message {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #7289da;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  .message-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .username {
+    font-weight: bold;
+    color: #fff;
+  }
+  .timestamp {
+    font-size: 0.8em;
+    color: #72767d;
+    margin-left: 5px;
+  }
+  .message p {
+    margin-top: 3px;
+  }
+  .sidebar-members {
+    width: 240px;
+    background-color: #2f3136;
+    display: flex;
+    flex-direction: column;
+  }
+  .members-header {
+    padding: 15px;
+    border-bottom: 1px solid #202225;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .member-list {
+    list-style: none;
+    padding: 10px 0;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  .member-item {
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .member-item:hover {
+    background-color: #40444b;
+  }
+  
+  /* --- Modal (Settings) Styles --- */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal-content {
+    background-color: #2f3136;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
